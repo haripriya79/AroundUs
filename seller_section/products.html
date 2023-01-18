@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <title>Products</title>
+    <style>
+        h3,
+        h4,
+        .fb {
+            font-family: 'gilroy-bold';
+        }
+        
+        th,
+        p,
+        .fm {
+            font-family: 'gilroy-medium';
+        }
+        
+        .three-navbar a {
+            font-family: 'gilroy-bold';
+        }
+        
+        .sidebar a {
+            font-family: 'gilroy-bold';
+        }
+        
+        a {
+            font-family: 'gilroy-bold';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toggle">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+
+        <div class="three-navbar">
+            <ul>
+                <li>
+
+                    <span class="icons"><i class="fa fa-tachometer"></i><a href="index.html">Dashboard</a></span>
+                    <span class="icons"><i class="fa fa-envelope"></i><a href="messages.html">Messages</a></span>
+                    <span class="icons"><i class="fa fa-list-alt"></i><a href="orders-listing.html">Order Listing</a></span>
+                    <span class="icons"><i class="fa fa-plus-circle"></i><a href="add-product.html">Add Product</a></span>
+                    <span class="icons"><i class="fa fa-th"></i><a href="products.html">Products</a></span>
+                    <span><i class="f"></i><a href="../index.html">Logout</a></span>
+                    <span><i class="fa fa-search"></i><a href="">search</a></span>
+                    <span><img src="img/avatar1.jpg" width="45" height="45" alt=""></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar">
+        <span class="sitename">Around Us</span>
+        <div class="search-profile">
+            <input type="search"><i class="fa fa-search"></i>
+            <img src="img/avatar1.jpg" width="45" height="45" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+
+                    <span class="icons"><a href="index.html"><i class="fa fa-tachometer"></i>Dashboard</a></span>
+                    <span class="icons"><a href="messages.html"><i class="fa fa-envelope"></i>Messages</a></span>
+                    <span class="icons"><a href="orders-listing.html"><i class="fa fa-list-alt"></i>Order Listing</a></span>
+                    <span class="icons"><a href="add-product.html"><i class="fa fa-plus-circle"></i>Add Product</a></span>
+                    <span class="icons"><a href="products.html"><i class="fa fa-th"></i>Products</a></span>
+                    <span><i class=""></i><a href="../index.html">Logout</a></span>
+                </li>
+            </ul>
+        </div>
+        <div class="container1">
+            <div class="dashboard-heading">
+                <h3>Dashboard / <span>All Products</span></h3>
+
+            </div>
+
+            <div class=" info-cards ">
+                <div class=" each-card1 ">
+                    <div class=" left-text ">
+                        <span class=" active1 ">Total Products</span>
+                        <h3>1046</h3>
+                    </div>
+                </div>
+                <div class=" each-card1 ">
+                    <div class=" left-text ">
+                        <span class=" active1 ">Units Sold</span>
+                        <h3>1046</h3>
+                    </div>
+                </div>
+                <div class=" each-card1 ">
+                    <div class=" left-text ">
+                        <span class=" active1 ">Active Orders</span>
+                        <h3>1046</h3>
+                    </div>
+                </div>
+                <div class=" each-card1 ">
+                    <div class=" left-text ">
+                        <span class=" active1 ">Active Orders</span>
+                        <h3>1046</h3>
+                    </div>
+                </div>
+
+                <div class=" list-orders ">
+                    <div class=" heading2 mt-5 ">
+                        <div class=" heading-items ">
+                            <ul>
+                                <li>
+                                    <a href=" " style=" margin-bottom: 0px; ">All products</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" search ">
+                            <i class=" fa fa-search "></i>
+                        </div>
+                    </div>
+                    <div class=" all-orders ">
+                        <table>
+                            <tr height=" 50px; ">
+
+                                <th>Product ID</th>
+                                <th>Name</th>
+                                <th width=" 100 ">Image</th>
+                                <th>Description</th>
+                                <th><i class=" fa fa-rupee "></i>Price</th>
+                                <th>Total customers orders</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                            <tr class=" tr ">
+
+                                <th>1</th>
+                                <th>Cake</th>
+                                <th><img src=" img/cake.jpg " width=" 50 " height=" 50 " alt=" "></th>
+
+                                <th>This is cake</th>
+                                <th>20</th>
+                                <th>234</th>
+                                <th><a class=" action " href=" ">Edit</a>|<a class=" action " href=" ">Delete</a></th>
+                            </tr>
+
+                            <tr class=" tr ">
+
+                                <th>2</th>
+                                <th>Popcorn</th>
+                                <th><img src=" img/Caramel-Popcorn.png " width=" 50 " height=" 50 " alt=" "></th>
+
+                                <th>This is Popcorn</th>
+                                <th>50</th>
+                                <th>34</th>
+                                <th><a class=" action " href=" ">Edit</a>|<a class=" action " href=" ">Delete</a></th>
+                            </tr>
+                            <tr class=" tr ">
+
+                                <th>3</th>
+                                <th>Potato Chips</th>
+                                <th><img src=" img/potato_chips_PNG50.png " width=" 50 " height=" 50 " alt=" "></th>
+
+                                <th>This is Potato Chips</th>
+                                <th>70</th>
+                                <th>300</th>
+                                <th><a class=" action " href=" ">Edit</a>|<a class=" action " href=" ">Delete</a></th>
+                            </tr>
+                            <tr class=" tr ">
+
+                                <th>4</th>
+                                <th>Sweets</th>
+                                <th><img src=" img/s1.png " width=" 50 " height=" 50 " alt=" "></th>
+
+                                <th>This is Sweet</th>
+                                <th>20</th>
+                                <th>234</th>
+                                <th><a class=" action " href=" ">Edit</a>|<a class=" action " href=" ">Delete</a></th>
+                            </tr>
+
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

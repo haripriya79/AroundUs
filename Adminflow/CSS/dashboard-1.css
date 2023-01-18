@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    user-select: none;
+
+}
+/*Universal*/
+ul{
+    list-style: none
+}
+a{
+    text-decoration: none;
+}
+/*End*/
+
+.container{
+    width: 100%;
+    min-width: 1360px;
+    background: white;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-height: 745px;
+}
+.sidebar{
+    width: 100%;
+    background: rgba(236, 239, 244, 1);
+    border-radius: 0 10px 10px 0;
+    
+}
+.site-header{
+    margin: 3rem 2.5rem 4rem 2rem;
+}
+.site-header h3{
+    font-size: 2rem;
+}
+.menu-items{
+    width: 83%;
+    margin: 0 8%;
+    
+}
+.menu-items li{
+    
+    margin: 1.3rem 0;
+    padding: 0.5rem 0 0.5rem  2.5rem;
+}
+.menu-items li:hover{
+    background: white;
+    border-radius: 10px;
+    
+}
+.menu-items li:hover .hover-green{
+    color: rgba(43, 111, 2, 1);
+}
+.menu-items a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+.menu-items a i{
+    padding-right: 1.5rem;
+    font-size: 1.7rem;
+
+}
+.logout-btn{
+    margin: 2rem 0 0 3rem;
+}
+.logout-btn a{
+    font-size: 1.5rem;
+    background: #F1C40F;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+}
+.logout-btn a i{
+    padding-right: 1.5rem
+}
+.logout-btn a:hover{
+    background: #F4D03F
+}
+    
+
+/*Content page*/
+
+.content-page{
+    width: 100%;
+}
+.info-cards{
+    width: 100%;
+    display:inline-flex
+}
+.card{
+    min-width: 18%;
+    margin: 4% 3.6%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-info-count{
+    font-size: 2.5rem;
+    padding: 2rem 1.5rem 0rem 1.5rem;
+}
+.card-info-name{
+    
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem
+}
+
+.bg-red{
+    background: rgba(235, 87, 87, 1);
+}
+.bg-yellow{
+    background: rgba(242, 201, 76, 1);
+}
+.bg-green{
+    background: rgba(111, 207, 151, 1);
+}
+.bg-blue{
+    background: rgba(86, 204, 242, 1);
+}
+
+
+.activity-messages-info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+}
+
+
+.activity-info{
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.activity-header{
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+    font-family: 'gilroy-bold';
+}
+.activity-header h3{
+    color: rgba(43, 111, 2, 1);
+    font-size: 1.7rem;
+    font-family: 'gilroy-bold';
+
+}
+.activity-card{
+    width: 50%;
+    font-family:'gilroy-bold';
+
+}
+.activity-card h4{
+    color: #909497;
+    font-size: 1.2rem;
+    padding: 0.3rem 0 0.5rem 0;
+}
+.count{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.3rem 0;
+    letter-spacing: 0
+}
+.statistic{
+    width: 85%;
+    margin: 2rem auto;
+}
+.statistic img{
+    width: 100%;
+}
+
+
+
+
+
+
+.message-info{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'gilroy-medium';
+
+}
+.message-header h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgba(43, 111, 2, 1);
+    padding: 0 0 0.5rem 0;
+    font-family: 'gilroy-bold';
+
+}
+.messages{
+    background: rgba(176, 238, 138, 1);
+    border-radius: 10px;
+    padding: 0.3rem 0;
+    height: 520px;
+    font-family: 'gilroy-medium';
+
+}
+.each-message{
+    width: 93%;
+    background: white;
+    margin: 0.7rem auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'gilroy-medium';
+    
+}
+.profile-img{
+    margin: 0.7rem 1rem;
+}
+.profile-img img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.name-msg{
+    padding: 0 1.3rem 0 1.3rem;    
+}
+.name-msg p{
+    padding-top: 0.7rem;
+    font-family: 'gilroy-medium';
+}
+.name-msg h3{
+    font-size: 1.4rem;
+    font-family: 'gilroy-medium';
+}

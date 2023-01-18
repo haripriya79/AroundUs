@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller-Signup-1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css" />
+
+    <style>
+        .crack {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            border-radius: 5px;
+        }
+        
+        .fb {
+            font-family: 'gilroy-bold';
+        }
+        
+        .fm {
+            font-family: 'gilroy-medium';
+        }
+        
+        input[type=text]::placeholder {
+            text-align: center;
+        }
+        
+        shrinkkk {
+            width: 950px;
+        }
+        
+        @media (max-width: 767px) {
+            .shrinkk {
+                width: 950px;
+            }
+        }
+        
+        .text-box-1 {
+            margin-top: 10px;
+            width: 400px;
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f0eaea;
+            margin-left: 20px;
+        }
+        
+        .text-box-2 {
+            margin-top: 10px;
+            width: 400px;
+            height: 100px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f0eaea;
+        }
+        
+        .text-box-3 {
+            margin-top: 10px;
+            margin-left: 15px;
+            width: 300px;
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f0eaea;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+        <div class="container-fluid"><a class="navbar-brand fb" href="../index.html">Around US</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only"></span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse  fb" id="navcol-1" style="margin-left: -49px;color: rgb(0,0,0);">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fb" href="signed-customer-home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fb" href="map.html">Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <h2 class="fb">
+                Seller Profile Creation
+            </h2>
+        </div>
+        <div class="container crack" style="margin-top: 20px; padding: 15px;">
+            <div class="row">
+                <h3 class="fb">
+                    Basic Info
+                </h3>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6">
+                    <label for="name" class="fm"> Owner Name</label></br>
+                    <input type="text" name="Name" id="phone" class="text-box-1"></br>
+                    <label for="email" class="fm">Email</label></br>
+                    <input type="text" name="Email" id="email" class="text-box-1"></br>
+                    <label for="phone" class="fm" style="margin-top: 10px;">Phone Num</label></br>
+                    <input type="text" name="Phone" id="phone" class="text-box-1"></br>
+                    <label for="address" class="fm" style="margin-top: 10px;"> Shop Description</label></br>
+                    <input type="text" name="Addres" id="Address" class="text-box-2">
+                </div>
+                <div class="col-sm-6">
+                    <label for="Shopname" class="fm">Shop Name</label></br>
+                    <input type="text" name="Email" id="email" class="text-box-1"></br>
+                    <label for="name" class="fm">Category</label></br>
+                    <input type="text" name="Name" id="" class="text-box-1"></br>
+                    <label for="phone" class="fm" style="margin-top: 10px;">Shop Phone (Optional)</label></br>
+                    <input type="text" name="Phone" id="phone" class="text-box-1"></br>
+                    <label for="address" class="fm" style="margin-top: 10px;">Image</label></br>
+                    <input type="text" name="Addres" id="Address" class="text-box-2" placeholder="Drop Images to add">
+                </div>
+            </div>
+        </div>
+        <div class="container crack" style="margin-top: 20px; padding: 15px; ">
+            <div class="row">
+                <h3 class="fb">
+                    Location
+                </h3>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6">
+                    <label for="name" class="fm"> City</label></br>
+                    <input type="text" name="Name" id="" class="text-box-1"> State</br>
+                    <label for="email" class="fm">Email</label></br>
+                    <input type="text" name="Name" id="" class="text-box-1"></br>
+                </div>
+                <div class="col-sm-6">
+                    <label for="Shopname" class="fm">Address</label></br>
+                    <input type="text" name="Email" id="" class="text-box-1"></br>
+                    <label for="name" class="fm">Zipcode</label></br>
+                    <input type="text" name="Name" id="" class="text-box-1"></br>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="container crack" style="margin-top: 20px; padding: 15px;">
+            <div class="row">
+                <h3 class="fb">
+                    Delivery slots
+                </h3>
+            </div>
+            <div class="row ">
+                <div class="col">
+                    <div class="col-sm-1">
+                        <label for="name" class="fb" style="text-align: center;"> Monday </label>
+                    </div>                    
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-1"> 
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-2">
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-3">
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 100px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        Add More
+                    </button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col">
+                    <div class="col-sm-1">
+                        <label for="name" class="fb" style="text-align: center;"> Tuesday </label>
+                    </div>                    
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-1"> 
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-2">
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-3">
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 100px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        Add More
+                    </button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col">
+                    <div class="col-sm-1">
+                        <label for="name" class="fb" style="text-align: center;"> Wednesday </label>
+                    </div>
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-1"> 
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-2">
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-3">
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 100px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        Add More
+                    </button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col">
+                    <div class="col-sm-1">
+                        <label for="name" class="fb" style="text-align: center;"> Thursday </label>
+                    </div>                    
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-1"> 
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-2">
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-3">
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 100px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        Add More
+                    </button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col">
+                    <div class="col-sm-1">
+                        <label for="name" class="fb" style="text-align: center;"> Friday </label>
+                    </div>
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-1"> 
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-2">
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-3">
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 100px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        Add More
+                    </button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col">
+                    <div class="col-sm-1">
+                        <label for="name" class="fb" style="text-align: center;"> Saturday </label>
+                    </div>                    
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-1"> 
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-2">
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-3">
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 100px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        Add More
+                    </button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col">
+                    <div class="col-sm-1">
+                        <label for="name" class="fb" style="text-align: center;"> Sunday </label>
+                    </div>                    
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-1"> 
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-2">
+                    <input type="text" name="Name" id="" class="text-box-3" placeholder="Enter Slot-3">
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 100px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        Add More
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container crack" style="margin-top: 20px; padding: 15px;">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2 class="fb">
+                        Items Listing
+                    </h2>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 100px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        ADD FILE
+                    </button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6">
+                    <label for="name" class="fb" style="text-align: center;"> Title </label></br>
+                    <input type="text" name="Name"  id="" class="text-box-1 shrinkk" placeholder="Enter Slot-1"> 
+                </div>
+                <div class="col-sm-6">
+                    <label for="name" class="fb" style="text-align: center;"> Price </label></br>
+                    <input type="text" name="Name" style="width:300px" id="" class="text-box-1" placeholder="Enter Slot-1"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="name" class="fb" style="text-align: center;"> Add </label></br>
+                    <input type="text" name="Name" style=" height: 100px;" id="" class="text-box-1 shrinkk" placeholder="Enter Slot-1"> 
+                </div>
+                <div class="col-sm-6" >
+                    <label for="name" class="fb" style="text-align: center;"> Description </label></br>
+                    <input type="text" name="Name" style=" height: 100px;" id="" class="text-box-1 shrinkk" placeholder="Enter Slot-1"> 
+               
+                </div>
+                <div class="col d-flex justify-content-center" style="margin-top: 20px;">
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 180px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        Add More
+                    </button>
+                    <button class="btn btn-primary fb" type="button" style="height: 40px;width: 180px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                        Save Changes
+                    </button>
+                </div>
+            </div>          
+        </div>
+    -->
+        <div class="container d-flex justify-content-center" style="margin-top: 35px; margin-bottom: 40px;">
+            <a href="/seller_section/index.html">
+                <button class="btn btn-primary fb" type="button" style="height: 40px;width: 200px; margin-left: 15px; color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                    Continue
+                </button>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

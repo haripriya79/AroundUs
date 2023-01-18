@@ -1,0 +1,121 @@
+/*admin.html*/
+.content-page1{
+    width: 90%;
+    margin: 0 auto;
+}
+.search{
+    width: 100%;
+    margin: 3% 0 2% 0;
+    display: inline-flex;
+    align-items: center
+
+    
+}
+.search input{
+    width: 58.5%;
+    height: 3.5rem;
+    padding-left: 4.5rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    background:  rgba(248, 245, 245, 1);
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.03rem;
+}
+.search i{
+    position: relative;
+    top: 0px;
+    left: -56%;
+    font-size: 1.5rem;
+}
+.search a{
+    background: rgba(157, 255, 98, 1);
+    border-radius: 10px;
+    
+    margin-left: 3rem;
+    padding: 0.9rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+.selers-users-info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+.sellers-info{
+    width: 90%;
+}
+.main-heading{
+    margin: 0 0 1rem 0;
+    font-family: 'gilroy-bold';
+}
+.main-heading h3{
+    color: rgba(43, 111, 2, 1);
+    font-size: 1.4rem;
+}
+.sellers, .users{
+    background: rgba(176, 238, 138, 1);
+    padding: 0.3rem 0;
+    border-radius: 5px;
+    margin: 0 0 0.5rem 0;
+}
+.each-seller{
+    width: 96%;
+    background: white;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.fb{
+    font-family:'gilroy-bold'
+}
+.fm{
+    font-family:'gilroy-medium'
+}
+.shop-name{
+    padding: 0.9rem 1.5rem;
+    font-family:'gilroy-bold'
+}
+.shop-name h3{
+    font-size: 1.2rem;
+    font-weight: 600
+    font-family:'gilroy-bold'
+}
+.action-on-seller{
+    padding: 0rem 1.5rem 0.9rem 1.5rem;
+    
+}
+.action-on-seller a{
+    margin-right: 1.9rem;
+    border: 1.5px solid rgba(43, 111, 2, 1);
+    padding: 0 0.8rem;
+    border-radius: 10px;
+    background: rgba(253, 253, 253, 1);
+    color: black;
+}
+.users-info{
+    width: 100%;
+}
+
+.each-user{
+    width: 95%;
+    background: white;
+    margin: 14px auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.user-img{
+    padding: 0.7rem 1rem;
+}
+.user-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-name h3{
+    font-size: 1.2rem;
+}
+
+

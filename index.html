@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around US</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="/css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/User-Profile1.css">
+    <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="/css/features.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .fb {
+            font-family: 'gilroy-bold';
+        }
+        
+        .fm {
+            font-family: 'gilroy-medium';
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .add {
+            border: 2px solid rgb(24, 194, 24);
+            background: #fff;
+            border-radius: 050px;
+            padding: 5px;
+            width: 130px;
+            height: 35px;
+            margin-left: 15px;
+            font-size: 13px;
+            text-align: center;
+            color: rgb(24, 194, 24);
+            font-weight: bold;
+            margin-top: 2px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .fbl {
+            font-family: 'gilroy-blackuploaded_file';
+        }
+        
+        .dropdown a:hover {
+            color: #589c14;
+        }
+        
+        button {
+            padding: .9rem 1.7rem;
+            color: var(--button-colour);
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+            background: var(--button);
+            border: solid 1px var(--button-border);
+            box-shadow: inset 0 0 0 2px var(--colour-white);
+            margin-right: 1em;
+        }
+        
+        button,
+        .button {
+            --button: #aafa78;
+            --button-hover: hsl(0, 0%, 20%);
+            --button-active: hsl(0, 0%, 30%);
+            --button-visited: hsl(0, 0%, 20%);
+            --button-colour: var(--colour-white);
+            --button-border: var(--colour-black);
+        }
+        
+        button:hover {
+            text-decoration: underline;
+            background: var(--button-hover);
+            box-shadow: inset 0 0 0 4px var(--colour-white);
+            color: #fcfcfc;
+        }
+        
+        button:active {
+            background: var(--button-active);
+        }
+        
+        button:visited {
+            background: var(--button-visited);
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 140px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            top: 50px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:#fcfcfc">
+        <div class="container-fluid"><a class="navbar-brand fbl" href="index.html" style="color: #000; font-size:x-large;">Around US</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only"></span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse  fb" id="navcol-1" style="color: rgb(0,0,0);">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fb" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fb" href="map.html">Map</a></li>
+                </ul>
+                <div class="text-center dropdown" style="width: 130px; background-color: #fcfcfc;">
+                    <button>SignUp</button>
+                    <div class="dropdown-content">
+                        <a href="/pages/csignup.html">Customer<br></a>
+                        <a href="/pages/ssignup.html">Seller</a>
+                    </div>
+                </div>
+                <div class="text-center dropdown" style="width: 130px; background-color: #fcfcfc;">
+                    <button>LogIn</button>
+                    <div class="dropdown-content">
+                        <a href="/pages/clogin.html">Customer<br></a>
+                        <a href="/pages/slogin.html">Seller</a></br>
+                        <a href="/pages/admin-login.html">Admin</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row pt-md-2 pl-md-5 mt-3 main-container">
+            <div class="col-sm-12 col-md-7 col-lg-7">
+                <div class="d-flex flex-column text-white">
+                    <p class="pl-lg-3 mb-5 mt-5 discover" style="font-size: 35px; line-height: normal;">
+                        Discover and Buy your daily needs, From people around you
+                    </p>
+                    <div class=" flex-shrink-1 g-light rounded rounded-pill shadow-sm mb-4 mt-2
+                            mt-3 search-bar  text-center" style="background-color: #ecebeb;">
+                        <div class="input-group pt-2 pl-3">
+                            <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 " style="background-color: #ecebeb;">
+                            <div class="input-group-append ml-4">
+                                <button id="button-addon1" type="submit" class="btn rounded rounded-pill
+                                        search-icon"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-5 d-none d-md-none d-lg-block">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 p-4 m-4 text-center">
+                <h1 class="title1 h1 text-wrap w-lg-100 w-sm-75" style="margin-top: -20px;">Choose From the Categories</h1>
+            </div>
+        </div>
+        <!--choose the categories -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="/assets/vegs.jpg" />
+                            <a href="/pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Vegetable Shops</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="./assets/fruits.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="/pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Fruit Shops</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="./assets/milk.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="/pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Milk Parlours</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="./assets/groceries.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="/pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Groceries</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="./assets/snacks.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="/pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Snack Sellers</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="./assets/handi.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="/pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Homemade Handicrafts</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 p-4 m-4 text-center">
+                <h1 class="title1 h1 text-wrap w-lg-100 w-sm-50" style="text-shadow: 1px #589c14;">
+                    We Have Some Beautiful Features Too
+                </h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="cardd cardd-1">
+                        <h3 class="fb" style="color: #589c14;">Around You</h3>
+                        <p class="fm">
+                            Evrything you see here is prioritized according to location, you see only those around you.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="cardd cardd-1">
+                        <h3 class="fb" style="color:#589c14">Delivery</h3>
+                        <p class="fm">
+                            Choose when and where you'd like the products to be delivered to you. Delivery is entirely slotted.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="cardd cardd-1">
+                        <h3 class="fb" style="color: #589c14;">Communication</h3>
+                        <p class="fm">
+                            We allow you to communicate directly with the produces and sellers, we intend to make selling personal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="margin-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5 class="headin5_amrc col_white_amrc pt2"><a href="/pages/seller.html" class="fb" style="color: white;">
+                        Home
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="headin5_amrc col_white_amrc pt2"><a href="/pages/seller.html" class="fb" style="color: white;">
+                        Map
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="headin5_amrc col_white_amrc pt2">
+                        <a href="/pages/seller.html" class="fb" style="color: white;">
+                            <div class="text-center dropdown" style="width: 130px;margin-top: -10px;">
+                                <button>LogIn</button>
+                                <div class="dropdown-content">
+                                    <a href="/pages/clogin.html">Customer<br></a>
+                                    <a href="/pages/slogin.html">Seller</a>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="headin5_amrc col_white_amrc pt2">
+                        <a href="/pages/seller.html" class="fb" style="color: white;">
+                            <div class="text-center dropdown" style="width: 130px;margin-top: -10px;">
+                                <button>Signup</button>
+                                <div class="dropdown-content">
+                                    <a href="/pages/csignup.html">Customer<br></a>
+                                    <a href="/pages/ssignup.html">Seller</a>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Designed and developed by <a href="#" style="color: white;">Illuminati</a></p>
+
+        <ul class="social_footer_ul">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <!--social_footer_ul ends here-->
+        </div>
+
+    </footer>
+</body>
+
+</html>

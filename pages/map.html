@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coustmer</title>
+    <link href="/css/mapSheet.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+
+        }
+
+
+        1.
+
+        function setColor(e) {
+            var target = e.target,
+                count = +target.dataset.count;
+
+            target.style.backgroundColor = count === 1 ? "#7FFF00" : '#d1d1d1';
+            target.dataset.count = count === 1 ? 0 : 1;
+
+        }
+    </script>
+    <!--map-->
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/y4pajsai5mvdrqtck9xm42gsn8v839q2/map_load?v=1.3"></script>
+    <script src="/js/show_map.js">
+    </script>
+    <!---->
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css" />
+    <!-- css only -->
+    <style>
+        .fb {
+            font-family: 'gilroy-bold';
+        }
+        
+        .fm {
+            font-family: 'gilroy-medium';
+        }
+        
+        .searchh {
+            width: 500px;
+            height: 50px;
+            align-items: center;
+            align-content: center;
+            background-color: #ffffff;
+            border: 1px solid #aafa78;
+            border-radius: 8px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        a:hover {
+            color: #aafa78;
+            text-decoration: none;
+        }
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 50px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            background-color: #fefefe;
+            float: right;
+            margin-top: 0px;
+            padding: 10px;
+            border: 1px solid #888;
+            width: 20%;
+        }
+        /* The Close Button */
+        
+        .close {
+            color: #aaaaaa;
+            left: 100px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+        <div class="container-fluid"><a class="navbar-brand fb" href="../index.html">Site Name</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only"></span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="color: rgb(0,0,0);">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fb" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fb" href="map.html">Map</a></li>
+                </ul>
+
+                <div class="card bg-white border-white text-center" style="width: 52px;">
+                    <img class="rounded-circle card-img-top w-100 d-block" style="height: 50px;" id="myBtn" src="/assets/user-photo2.jpg">
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <a href="User_profile-1.html" class="mmm fb">Account Settings</a>
+                            <hr>
+                            <a href="User_profile-2.html" class="mmm fb">Previous Orders</a>
+                            <hr>
+                            <a href="User-profile-3.html" class="mmm fb">Notifications </a>
+                            <hr>
+                            <a href="../index.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>l̥l̥ōl̥ō
+    </nav>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!-----search bar-------->
+    <br />
+    <br />
+
+    <div class="container-fluid mb-3">
+        <div class="row text-center">
+
+            <div class="col-lg-8 mt-3 mb-5 ">
+                <div class="d-flex justify-content-around">
+                    <div class="input-group col-lg-9 input-group-lg" style="border:1px #aafa78;">
+                        <div class="input-group-prepend"> <span class="input-group-text google"><i class="fa
+                                        fa-search"></i></span> </div>
+
+                        <input type="text" class="form-control">
+                        <div class="input-group-append"> <span class="input-group-text microphone"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+                <div class="d-flex flex-row bd-highlight mt-3 mb-3">
+                    <div class="pt-2 d-inline  icon ">
+                        <i class="fas fa-dolly"></i>
+                    </div>
+                    <div class=" pl-2 bd-highlight">
+                        <div class="dropdown">
+                            <button class="btn btn-lg bg-white dropdown-toggle fb" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="fb">Delivery</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item fm" href="#">Action</a>
+                                <a class="dropdown-item fm" href="#">Another
+                                    action</a>
+                                <a class="dropdown-item fm" href="#">Something
+                                    else
+                                    here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+                <div class="d-flex flex-row bd-highlight mt-3 mb-3">
+                    <div class="pt-2 icon ">
+                        <i class="fas fa-clock"></i>
+
+                    </div>
+                    <div class=" pl-2 bd-highlight">
+                        <div class="dropdown">
+                            <button class="btn btn-lg bg-white dropdown-toggle fb" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Today
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item fm" href="#">Action</a>
+                                <a class="dropdown-item fm" href="#">Another
+                                    action</a>
+                                <a class="dropdown-item fm" href="#">Something
+                                    else
+                                    here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="row ml-1">
+            <div class="col-lg-3">
+                <div class="d-flex flex-column bd-highlight mb-3 justify-content-center mr-3">
+                    <div class="p-2 d-inline-flex 
+                            bd-highlight">
+                        <h5 class="fb">
+                            Map View
+                        </h5>
+
+
+                        <div class="switchToggle pl-2 ml-auto">
+
+                            <input type="checkbox" id="switch">
+                            <label for="switch">Toggle</label>
+                        </div>
+
+
+                    </div>
+                    <div class="p-2 bd-highlight ">
+                        <h5 class="fb">Categories</h5>
+                        <div class="overflow-auto mr-5 pl-3">
+                            <div class="d-flex  justify-content-between">
+                                <p class="d-inline fm">Fresh Fruits</p>
+                                <input type="checkbox" class="largerCheckbox" name="checkBox1">
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="d-inline fm">Fresh Fruits</p>
+                                <input type="checkbox" class="largerCheckbox" name="checkBox1">
+
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <p class="d-inline fm">Fresh Fruits</p>
+                                <input type="checkbox" class="largerCheckbox" name="checkBox1">
+
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <p class="d-inline fm">Fresh Fruits</p>
+                                <input type="checkbox" class="largerCheckbox" name="checkBox1">
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="p-2 mt-3 bd-highlight">
+
+                        <h5 class="pt-3 fb">Distance Range</h5>
+                        <div class="slidecontainer">
+                            <h6 id="demo" class="pt-3 fm"> Radius around selected destination 20 km</h6>
+
+                            <input type="range" min="1" max="50" value="25" class="slider mt-3" id="myRange">
+                        </div>
+
+
+
+                    </div>
+                    <div class="p-2 mt-3 bd-highlight ">
+                        <h5 class="pt-3 fb">Rating</h5>
+                        <!-- Material inline 1 -->
+                        <div class="justify-content-around d-flex pt-3">
+                            <input type="button" id="rating1" value="1" class="rating " onclick="setColor(event)" ; data-count="1" />
+                            <input type="button" id="rating1" value="2" class="rating" onclick="setColor(event)" ; data-count="1" />
+                            <input type="button" id="rating1" value="3" class="rating" onclick="setColor(event)" ; data-count="1" />
+                            <input type="button" id="rating1" value="4" class="rating" onclick="setColor(event)" ; data-count="1" />
+                            <input type="button" id="rating1" value="5" class="rating" onclick="setColor(event)" ; data-count="1" />
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0380319894607!2d77.54781531430434!3d12.96941821843651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3de349bb4c4f%3A0x2b317ffa28d36e6c!2s35%2F2%2C%20Chanel%20Rd%2C%20Kempapura%20Agrahara%2C%20Bengaluru%2C%20Karnataka%20560023!5e0!3m2!1sen!2sin!4v1621566097774!5m2!1sen!2sin"
+                    width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="col-lg-3 d-flex align-items-center  flex-column  overflow-hidden">
+
+
+                <div class="card shadow bg-white rounded " style="width:
+                        18rem; height: 18rem;">
+                    <img src="/assets/one_mart.jfif" class="card-img-top
+                            h-50" alt="...">
+                    <div class="card-body">
+
+                        <h3 class="d-inline fb">One Mart</h3>
+                        <div class="d-inline float-right"><i class="fa
+                                    fa-star pr-1" style="color: green;"></i><strong>8.0</strong></div><br>
+                        <small class="fm">Grocery store</small> &#183; <small class="fm">1.5km</small> &#183; <small class="fm">Open now</small> <br>
+                        <span class="fm"><i class="fa fa-shopping-bag pr-1" style="color:
+                                    green;"></i>Takeaway</span>
+                        <span class="fm"><i class="fa fa-motorcycle pr-1" style="color:
+                                    green;"></i>Delivery</span>
+                    </div>
+                </div>
+                <div class="card shadow bg-white rounded" style="width:
+                            18rem; height: 18rem;">
+                    <img src="/assets/one_mart.jfif" class="card-img-top
+                                h-50" alt="...">
+                    <div class="card-body">
+
+                        <h3 class="d-inline fb">One Mart</h3>
+                        <div class="d-inline float-right"><i class="fa
+                                        fa-star pr-1" style="color: green;"></i><strong>8.0</strong></div><br>
+                        <small class="fm">Grocery store</small> &#183; <small class="fm">1.5km</small> &#183; <small class="fm">Open now</small> <br>
+                        <span class="fm"><i class="fa fa-shopping-bag pr-1" style="color:
+                                        green;"></i>Takeaway</span>
+                        <span class="fm"><i class="fa fa-motorcycle pr-1" style="color:
+                                        green;"></i>Delivery</span>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

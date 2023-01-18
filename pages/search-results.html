@@ -1,0 +1,415 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/User-Profile1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="/css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css" />
+    <!-- css only -->
+    <style>
+        .fb {
+            font-family: 'gilroy-bold';
+        }
+        
+        .fm {
+            font-family: 'gilroy-medium';
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        a:hover {
+            color: #aafa78;
+            text-decoration: none;
+        }
+        
+        .searchh {
+            width: 500px;
+            height: 50px;
+            align-items: center;
+            align-content: center;
+            background-color: #ffffff;
+            border: 1px solid #aafa78;
+            border-radius: 8px;
+        }
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 50px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            background-color: #fefefe;
+            float: right;
+            margin-top: 0px;
+            padding: 10px;
+            border: 1px solid #888;
+            width: 20%;
+        }
+        /* The Close Button */
+        
+        .close {
+            color: #aaaaaa;
+            left: 100px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .fbl {
+            font-family: 'gilroy-blackuploaded_file';
+        }
+        
+        a {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!------Navigation bar----->
+
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: #fefefe;">
+        <div class="container-fluid"><a class="navbar-brand fbl" href="../index.html" style="font-size: x-large;">Around US</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only"></span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="color: rgb(0,0,0);">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fb" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fb" href="map.html">Map</a></li>
+                </ul>
+
+                <div class="card bg-white border-white text-center" style="width: 52px;">
+                    <img class="rounded-circle card-img-top w-100 d-block" style="height: 50px;" id="myBtn" src="/assets/user-photo2.jpg">
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <a href="User_profile-1.html" class="mmm fb">Account Settings</a>
+                            <hr>
+                            <a href="User_profile-2.html" class="mmm fb">Previous Orders</a>
+                            <hr>
+                            <a href="User-profile-3.html" class="mmm fb">Notifications </a>
+                            <hr>
+                            <a href="../index.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!-----search bar-------->
+    <br />
+    <br />
+
+    <div class="container d-flex justify-content-center">
+        <form class="form-search" method="get" action="#">
+            <input type="search" name="search" placeholder="Search by seller, categories or shops" class="searchh" />
+            <button class="btn btn-primary fb" type="button" style="height: 40px;width: 100px;color: rgb(8,0,0);background: #aafa78;border-radius: 10PX;border-style: none;">
+                    GO
+                </button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" style="padding: 20px;">
+            <div class="col">
+                <div class="strip">
+                    <figure>
+                        <img src="../assets/veg-1.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                        <a href="shop_profile.html" class="strip_info">
+                            <small>Vegetables</small>
+                            <div class="item_title">
+                                <h3>Kumar Swamys Vegetable shop</h3>
+                                <small>Netaji Road</small>
+                            </div>
+                        </a>
+                    </figure>
+                    <!--
+                          <ul>
+                          <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                          <li>
+                              <div class="score"><strong>8.9</strong></div>
+                          </li>
+                      </ul>
+                      -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="strip">
+                    <figure>
+                        <img src="../assets/vege-2.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                        <a href="shop_profile.html" class="strip_info">
+                            <small>Vegetables</small>
+                            <div class="item_title">
+                                <h3>Rathnamma Vegetable Stall</h3>
+                                <small>Beside the bus stop</small>
+                            </div>
+                        </a>
+                    </figure>
+                    <!--
+                          <ul>
+                          <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                          <li>
+                              <div class="score"><strong>8.9</strong></div>
+                          </li>
+                      </ul>
+                      -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="strip">
+                    <figure>
+                        <img src="../assets/veg-3.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                        <a href="shop_profile.html" class="strip_info">
+                            <small>Vegetables</small>
+                            <div class="item_title">
+                                <h3>Pauls Veg Stall</h3>
+                                <small>45 old street Stall</small>
+                            </div>
+                        </a>
+                    </figure>
+                    <!--
+                          <ul>
+                          <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                          <li>
+                              <div class="score"><strong>8.9</strong></div>
+                          </li>
+                      </ul>
+                      -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="strip">
+                    <figure>
+                        <img src="../assets/veg-4.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                        <a href="shop_profile.html" class="strip_info">
+                            <small>Vegetables</small>
+                            <div class="item_title">
+                                <h3> Josephs Vegetable stall</h3>
+                                <small>27 Old Rajsa street</small>
+                            </div>
+                        </a>
+                    </figure>
+                    <!--
+                          <ul>
+                          <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                          <li>
+                              <div class="score"><strong>8.9</strong></div>
+                          </li>
+                      </ul>
+                      -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" style="padding: 20px;">
+            <div class="col">
+                <div class="strip">
+                    <figure>
+                        <img src="../assets/veg-5.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                        <a href="shop_profile.html" class="strip_info">
+                            <small>Vegetables</small>
+                            <div class="item_title">
+                                <h3> Suvitha Vegetable stall</h3>
+                                <small>27 Old Rajsa street</small>
+                            </div>
+                        </a>
+                    </figure>
+                    <!--
+                            <ul>
+                            <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                            <li>
+                                <div class="score"><strong>8.9</strong></div>
+                            </li>
+                        </ul>
+                        -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="strip">
+                    <figure>
+                        <img src="../assets/veg-6.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                        <a href="shop_profile.html" class="strip_info">
+                            <small>Vegetables</small>
+                            <div class="item_title">
+                                <h3> Monoj's Vegetable stall</h3>
+                                <small>27 Old Rajsa street</small>
+                            </div>
+                        </a>
+                    </figure>
+                    <!--
+                            <ul>
+                            <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                            <li>
+                                <div class="score"><strong>8.9</strong></div>
+                            </li>
+                        </ul>
+                        -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="strip">
+                    <figure>
+                        <img src="../assets/veg-7.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                        <a href="shop_profile.html" class="strip_info">
+                            <small>Vegetables</small>
+                            <div class="item_title">
+                                <h3> Rajas Vegetable stall</h3>
+                                <small>27 Old Rajsa street</small>
+                            </div>
+                        </a>
+                    </figure>
+                    <!--
+                            <ul>
+                            <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                            <li>
+                                <div class="score"><strong>8.9</strong></div>
+                            </li>
+                        </ul>
+                        -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="strip">
+                    <figure>
+                        <img src="../assets/veg-8.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                        <a href="shop_profile.html" class="strip_info">
+                            <small>Vegetables</small>
+                            <div class="item_title">
+                                <h3> Harrys Veg Stall</h3>
+                                <small>67 shavy street</small>
+                            </div>
+                        </a>
+                    </figure>
+                    <!--
+                            <ul>
+                            <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                            <li>
+                                <div class="score"><strong>8.9</strong></div>
+                            </li>
+                        </ul>
+                        -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="margin-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5 class="headin5_amrc col_white_amrc pt2"><a href="/pages/seller.html" class="fb" style="color: white;">
+                            Home
+                        </a>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="headin5_amrc col_white_amrc pt2"><a href="/pages/seller.html" class="fb" style="color: white;">
+                            Map
+                        </a>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="headin5_amrc col_white_amrc pt2">
+                        <a href="/pages/seller.html" class="fb" style="color: white;">
+                            <div class="text-center dropdown" style="width: 130px;margin-top: -10px;">
+                                <button>LogIn</button>
+                                <div class="dropdown-content">
+                                    <a href="/pages/clogin.html">Customer<br></a>
+                                    <a href="/pages/slogin.html">Seller</a>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="headin5_amrc col_white_amrc pt2">
+                        <a href="/pages/seller.html" class="fb" style="color: white;">
+                            <div class="text-center dropdown" style="width: 130px;margin-top: -10px;">
+                                <button>Signup</button>
+                                <div class="dropdown-content">
+                                    <a href="/pages/csignup.html">Customer<br></a>
+                                    <a href="/pages/ssignup.html">Seller</a>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Designed and developed by <a href="#" style="color: white;">Illuminati</a></p>
+
+        <ul class="social_footer_ul">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <!--social_footer_ul ends here-->
+        </div>
+
+    </footer>
+</body>
+
+</html>

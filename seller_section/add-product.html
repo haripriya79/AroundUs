@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/add-products.css">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Add Products</title>
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h3,
+        h4,
+        .fb {
+            font-family: 'gilroy-bold';
+        }
+        
+        p,
+        .fm {
+            font-family: 'gilroy-medium';
+        }
+        
+        .three-navbar a {
+            font-family: 'gilroy-bold';
+        }
+        
+        .sidebar a {
+            font-family: 'gilroy-bold';
+        }
+        
+        a {
+            font-family: 'gilroy-bold';
+        }
+    </style>
+</head>
+</head>
+
+<body>
+    <div class="toggle">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+
+        <div class="three-navbar">
+            <ul>
+                <li>
+
+                    <span><i class="fa fa-tachometer"></i><a href="index.html">Dashboard</a></span>
+                    <span><i class="fa fa-envelope"></i><a href="messages.html">Messages</a></span>
+                    <span><i class="fa fa-list-alt"></i><a href="orders-listing.html">Order Listing</a></span>
+                    <span><i class="fa fa-plus-circle"></i><a href="add-product.html">Add Product</a></span>
+                    <span><i class="fa fa-th"></i><a href="products.html">Products</a></span>
+                    <span><i class="f"></i><a href="../index.html">Logout</a></span>
+
+                    <span><i class="fa fa-search"></i><a href="">search</a></span>
+                    <span><img src="img/avatar1.jpg" width="45" height="45" alt=""></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar">
+        <span class="sitename">Around Us</span>
+        <div class="search-profile">
+            <input type="search"><i class="fa fa-search"></i>
+            <img src="img/avatar1.jpg" width="45" height="45" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+
+                    <span class="icons"><a href="index.html"><i class="fa fa-tachometer"></i>Dashboard</a></span>
+                    <span class="icons"><a href="messages.html"><i class="fa fa-envelope"></i>Messages</a></span>
+                    <span class="icons"><a href="orders-listing.html"><i class="fa fa-list-alt"></i>Order Listing</a></span>
+                    <span class="icons"><a href="add-product.html"><i class="fa fa-plus-circle"></i>Add Product</a></span>
+                    <span class="icons"><a href="products.html"><i class="fa fa-th"></i>Products</a></span>
+                    <span><i class="f"></i><a href="../index.html">Logout</a></span>
+
+                </li>
+            </ul>
+        </div>
+
+        <!--Content-->
+
+        <div class="container1">
+            <div class="dashboard-heading">
+                <h3>Dashboard / <span> Add Products</span></h3>
+            </div>
+            <div class="add-products">
+                <div class="buttons">
+                    <button id="add" onclick="closeBulk()">Add A Single Item</button>
+                    <button id="add_bulk" onclick="openBulk()">Add A Bulk Item</button>
+                </div>
+                <div class="form" id="single">
+                    <form>
+                        <div class="left-form">
+                            <label for="title">Title</label><br>
+                            <input type="text"><br>
+                            <label for="image">Add Image</label><br>
+                            <div class="image">
+                                <p>image</p>
+                                <i class="fa fa-plus-circle"></i>
+                            </div>
+                        </div>
+                        <div class="right-form">
+                            <label for="price">Price</label><br>
+                            <input type="number"><br>
+                            <label for="desc">Description</label><br>
+                            <textarea name="w3review" rows="4" cols="50"></textarea>
+                        </div>
+                    </form>
+                    <div class="bottom-button">
+                        <button>Add More</button>
+                        <button>Save Changes</button>
+                    </div>
+                </div>
+
+                <div class="form2" id="bulk">
+                    <form>
+                        <p>When You click on Button.You can Redirect to ExcelSheet.To Add Your Items There.</p><br>
+                        <table>
+                            <tr>
+                                <td><label for="">Add Your Items</label></td>
+                                <td><input type="text" value="Add Items"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Upload Excel Sheet</label></td>
+                                <td><label for="file" style="font-weight:bold;padding: 10px 20px;color:black;background:#aafa78;width:150px;height:35px;border-radius:10px;">choose
+                                        file</label></td>
+                            </tr>
+                        </table>
+
+                    </form>
+                    <div class="bottom-button">
+
+                        <button>Save Changes</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--End of content-->
+
+    </div>
+    <script>
+        function openBulk() {
+            document.getElementById("single").style.display = "none";
+            document.getElementById("bulk").style.display = "block";
+            document.getElementById("add_bulk").style.background = "#92EE5C";
+            document.getElementById("add").style.background = "rgba(250,250,250,0.9)";
+
+
+        }
+
+        function closeBulk() {
+            document.getElementById("single").style.display = "block";
+            document.getElementById("bulk").style.display = "none";
+            document.getElementById("add_bulk").style.background = "rgba(250,250,250,0.9)";
+            document.getElementById("add").style.background = "#92ee5c";
+        }
+    </script>
+</body>
+
+</html>

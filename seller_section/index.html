@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dashboard</title>
+    <style>
+        h3,
+        .fb {
+            font-family: 'gilroy-bold';
+        }
+        
+        .fm {
+            font-family: 'gilroy-medium';
+        }
+        
+        .three-navbar a {
+            font-family: 'gilroy-bold';
+        }
+        
+        .sidebar a {
+            font-family: 'gilroy-bold';
+        }
+        
+        a {
+            font-family: 'gilroy-bold';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toggle">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+
+        <div class="three-navbar">
+            <ul>
+                <li>
+
+                    <span><i class="fa fa-tachometer"></i><a href="index.html" class="fb">Dashboard</a></span>
+                    <span><i class="fa fa-envelope"></i><a href="messages.html" style="font-family: 'gilroy-bold';">Messages</a></span>
+                    <span><i class="fa fa-list-alt"></i><a href="orders-listing.html">Order Listing</a></span>
+                    <span><i class="fa fa-plus-circle"></i><a href="add-product.html">Add Product</a></span>
+                    <span><i class="fa fa-th"></i><a href="products.html">Products</a></span>
+                    <span><i class="f"></i><a href="../index.html">Logout</a></span>
+                    <span><i class="fa fa-search"></i><a href="">search</a></span>
+                    <span><img src="img/avatar1.jpg" width="45" height="45" alt=""></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar">
+        <span class="sitename">Around Us</span>
+        <div class="search-profile">
+            <input type="search"><i class="fa fa-search"></i>
+            <img src="img/avatar1.jpg" width="45" height="45" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+
+                    <span class="icons"><a href="index.html"><i class="fa fa-tachometer"></i>Dashboard</a></span>
+                    <span class="icons"><a href="messages.html"><i class="fa fa-envelope"></i>Messages</a></span>
+                    <span class="icons"><a href="orders-listing.html"><i class="fa fa-list-alt"></i>Order Listing</a></span>
+                    <span class="icons"><a href="add-product.html"><i class="fa fa-plus-circle"></i>Add Product</a></span>
+                    <span class="icons"><a href="products.html"><i class="fa fa-th"></i>Products</a></span>
+                    <span><i class="f"></i><a href="../index.html">Logout</a></span>
+
+                </li>
+            </ul>
+        </div>
+
+        <!--Content-->
+
+        <div class="container1">
+            <div class="dashboard-heading">
+                <h3>Dashboard / <span> My Dashboard</span></h3>
+
+            </div>
+            <div class="info-cards-dashboard">
+                <div class="each-card-dashboard bg-blue">
+                    <div class="message fb">
+                        <h3>26 New Messages! <i class="fa fa-fw fa-envelope-open"></i></h3>
+                    </div>
+                    <div class="details">
+                        <a href="messages.html">view details</a>
+                    </div>
+                </div>
+                <div class="each-card-dashboard bg-yellow">
+                    <div class="message fb">
+                        <h3>11 New Reviews! <i class="fa fa-fw fa-star"></i></h3>
+                    </div>
+                    <div class="details fb">
+                        <a href="messages.html">view details</a>
+                    </div>
+                </div>
+                <div class="each-card-dashboard bg-green">
+                    <div class="message fb">
+                        <h3>16 New Orders! <i class="fa fa-fw fa-shopping-cart"></i></h3>
+                    </div>
+                    <div class="details">
+                        <a href="orders-listing.html">view details</a>
+                    </div>
+                </div>
+                <div class="each-card-dashboard bg-red">
+                    <div class="message fb">
+                        <h3>Total Orders <i class="fa fa-fw fa-heart"></i></h3>
+                    </div>
+                    <div class="details fb">
+                        <a href="#">view details</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="statistic">
+                <h3 class="fb">statistic</h3>
+                <img src="img/dash-statistic1.png" alt="">
+            </div>
+        </div>
+        <!--End of content-->
+
+    </div>
+</body>
+
+</html>

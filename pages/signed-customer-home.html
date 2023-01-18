@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around US</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/User-Profile1.css">
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="../css/features.css">
+    <link href="/css/home.css" rel="stylesheet">
+
+    <style>
+        .fb {
+            font-family: 'gilroy-bold';
+        }
+        
+        .fm {
+            font-family: 'gilroy-medium';
+        }
+        
+        .fbl {
+            font-family: 'gilroy-blackuploaded_file';
+        }
+        
+        a {
+            color: #000;
+        }
+        
+        a:hover {
+            color: #aafa78;
+        }
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 50px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            background-color: #fefefe;
+            float: right;
+            margin-top: 0px;
+            padding: 10px;
+            border: 1px solid #888;
+            width: 20%;
+        }
+        /* The Close Button */
+        
+        .close {
+            color: #aaaaaa;
+            left: 100px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navigation-clean-button" style="background-color: #fcfcfc;">
+        <div class="container-fluid"><a class="navbar-brand fbl" href="../index.html" style="font-size: x-large;">Around US</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only"></span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="color: rgb(0,0,0);">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fb" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fb" href="map.html">Map</a></li>
+                </ul>
+
+                <div class="card bg-white border-white text-center" style="width: 52px;">
+                    <img class="rounded-circle card-img-top w-100 d-block" style="height: 50px;" id="myBtn" src="/assets/user-photo2.jpg">
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <a href="User_profile-1.html" class="mmm fb">Account Settings</a>
+                            <hr>
+                            <a href="User_profile-2.html" class="mmm fb">Previous Orders</a>
+                            <hr>
+                            <a href="User-profile-3.html" class="mmm">Notifications </a>
+                            <hr>
+                            <a href="../index.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    </div>
+    <div class="container-fluid">
+        <div class="row pt-md-2 pl-md-5 mt-3">
+            <div class="col-sm-12 col-md-7 col-lg-7">
+                <div class="d-flex flex-column">
+                    <p class="pl-lg-3 mb-5 mt-5 discover" style="font-size: 35px;">
+                        Discover and Buy your daily needs, From people around you
+                    </p>
+                    <div class=" flex-shrink-1 g-light rounded rounded-pill shadow-sm mb-4 mt-2
+                            mt-3 search-bar bg-light text-center">
+                        <div class="input-group pt-2 pl-3">
+                            <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                            <div class="input-group-append ml-4">
+                                <button id="button-addon1" type="submit" class="btn rounded rounded-pill
+                                        search-icon"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-5 d-none d-md-none d-lg-block">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 p-4 m-4 text-center">
+                <h1 class="title1 h1 text-wrap w-lg-100 w-sm-75" style="margin-top: -20px;">Choose From the Categories</h1>
+            </div>
+        </div>
+        <!--choose the categories -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="../assets/vegs.jpg" />
+                            <a href="../pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Vegetable Shops</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="../assets/fruits.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="../pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Fruit Shops</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="../assets/milk.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="../pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Milk Parlours</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="../assets/groceries.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="../pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Groceries</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="../assets/snacks.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="../pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Snack Sellers</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="strip">
+                        <figure>
+                            <img src="../assets/handi.jpg" data-src="img/location_1.jpg" class="img-fluid lazy loaded" alt="" data-was-processed="true">
+                            <a href="../pages/search-results.html" class="strip_info">
+                                <div class="item_title">
+                                    <h3>Homemade Handicrafts</h3>
+                                </div>
+                            </a>
+                        </figure>
+                        <!--
+                                <ul>
+                                <li><span class="take yes">Takeaway</span> <span class="deliv yes">Delivery</span></li>
+                                <li>
+                                    <div class="score"><strong>8.9</strong></div>
+                                </li>
+                            </ul>
+                            -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 p-4 m-4 text-center">
+                <h1 class="title1 h1 text-wrap w-lg-100 w-sm-50" style="text-shadow: 1px #589c14;">
+                    We Have Some Beautiful Features Too
+                </h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="cardd cardd-1">
+                        <h3 class="fb" style="color: #589c14;">Around You</h3>
+                        <p class="fm">
+                            Evrything you see here is prioritized according to location, you see only those around you.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="cardd cardd-1">
+                        <h3 class="fb" style="color:#589c14">Delivery</h3>
+                        <p class="fm">
+                            Choose when and where you'd like the products to be delivered to you. Delivery is entirely slotted.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="cardd cardd-1">
+                        <h3 class="fb" style="color: #589c14;">Communication</h3>
+                        <p class="fm">
+                            We allow you to communicate directly with the produces and sellers, we intend to make selling personal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

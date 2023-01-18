@@ -1,0 +1,295 @@
+.mmm{
+    font-size: larger;
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: #92ee5c;
+    text-decoration: underline;
+}
+.text-box-1{
+    margin-top: 10px;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border:none;
+    background-color: #f0eaea;
+}
+.text-box-2{
+    margin-top: 10px;
+    width: 400px;
+    height: 100px;
+    border-radius: 5px;
+    border:none;
+    background-color: #f0eaea;
+}
+.saveee{
+   background-color: #ffffff;
+   border-radius: 5px;
+   border: 1px #92ee5c;
+}
+a.menu_item {
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    padding: 20px 95px 15px 20px;
+    color: #444;
+    -webkit-box-shadow: 0px 22px 24px 0px rgba(46, 51, 51, 0.05);
+    -moz-box-shadow: 0px 22px 24px 0px rgba(46, 51, 51, 0.05);
+    box-shadow: 0px 22px 24px 0px rgba(46, 51, 51, 0.05);
+    margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+    a.menu_item {
+        margin-bottom: 15px;
+    }
+}
+a.menu_item h3 {
+    font-size: 16px;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+a.menu_item p {
+    color: #777;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-size: 0.8125rem;
+}
+a.menu_item figure {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0;
+    right: 15px;
+    top: 15px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+a.menu_item figure img {
+    width: 70px;
+    height: auto;
+}
+a.menu_item:hover {
+    -webkit-box-shadow: 0px 22px 24px 0px rgba(46, 51, 51, 0.1);
+    -moz-box-shadow: 0px 22px 24px 0px rgba(46, 51, 51, 0.1);
+    box-shadow: 0px 22px 24px 0px rgba(46, 51, 51, 0.1);
+}
+a.menu_item:hover h3 {
+    color: #66cc66;
+}
+        .strip {
+    position: relative;
+    margin-bottom: 30px
+}
+
+.strip figure {
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 190px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #ededed
+}
+
+.strip figure img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.strip figure:hover img {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+    -moz-transform: translate(-50%, -50%) scale(1.1);
+    -ms-transform: translate(-50%, -50%) scale(1.1);
+    -o-transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.1)
+}
+
+.strip figure a.strip_info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    display: block
+}
+
+.strip figure a.strip_info>small {
+    position: absolute;
+    background-color: #fff;
+    background-color: #fff;
+    left: 15px;
+    top: 15px;
+    color: #333;
+    font-weight: 500;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    padding: 6px 8px 4px 8px;
+    line-height: 1;
+    font-size: 12px;
+    font-size: 0.75rem
+}
+
+.strip figure .item_title {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 65px 15px 10px 15px;
+    background: -moz-linear-gradient(top, transparent 5%, #000 100%);
+    background: -webkit-linear-gradient(top, transparent 5%, #000 100%);
+    background: linear-gradient(to bottom, transparent 5%, #000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0)
+}
+
+.strip figure .item_title h3 {
+    font-size: 16px;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1
+}
+
+.strip figure .item_title small {
+    font-weight: 500;
+    line-height: 1;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.strip ul {
+    padding: 0;
+    margin: 0
+}
+
+.strip ul li {
+    display: inline-block;
+    padding-top: 12px;
+    font-size: 13px;
+    font-size: 0.8125rem
+}
+
+.strip ul li:last-child {
+    padding: 0;
+    float: right
+}
+.ribbon {
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: 500;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    padding: 6px 8px 4px 23px;
+    line-height: 1;
+    font-size: 12px;
+    font-size: 0.75rem;
+    z-index: 9
+}
+
+.ribbon.off {
+    background-color: #92ee5c
+}
+
+.ribbon.off:before {
+    font-family: 'food';
+    content: '\0076';
+    position: absolute;
+    left: 8px;
+    top: 4px
+}
+.score strong {
+    padding: 10px 0 0 0;
+    display: inline-block;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-weight: 500
+}
+
+.score strong:before {
+    font-family: 'ElegantIcons';
+    content: "\e033";
+    margin: -4px 3px 0 0;
+    color: #66cc66
+}
+
+.take,
+.deliv {
+    font-size: 12px;
+    font-size: 0.75rem;
+    position: relative;
+    padding-left: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+    color: #444
+}
+
+.take:before,
+.deliv:before {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: "ElegantIcons";
+    content: "\e013";
+    position: absolute;
+    line-height: 1;
+    font-weight: normal
+}
+
+.take.no,
+.deliv.no {
+    text-decoration: line-through;
+    color: #bbb
+}
+
+.take:before {
+    content: "\e013";
+    left: 0;
+    top: -1px
+}
+
+.take.no {
+    text-decoration: line-through;
+    color: #bbb
+}
+
+.deliv {
+    padding-left: 30px;
+    margin-right: 0
+}
+
+.deliv:before {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-family: 'food';
+    content: '\0074';
+    left: 0;
+    top: -4px
+}

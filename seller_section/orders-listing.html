@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <title>Products</title>
+    <style>
+        h3,
+        h4,
+        .fb {
+            font-family: 'gilroy-bold';
+        }
+        
+        p,
+        .fm {
+            font-family: 'gilroy-medium';
+        }
+        
+        .three-navbar a {
+            font-family: 'gilroy-bold';
+        }
+        
+        .sidebar a {
+            font-family: 'gilroy-bold';
+        }
+        
+        a {
+            font-family: 'gilroy-bold';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toggle">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+
+        <div class="three-navbar">
+            <ul>
+                <li>
+
+                    <span class="icons"><i class="fa fa-tachometer"></i><a href="index.html">Dashboard</a></span>
+                    <span class="icons"><i class="fa fa-envelope"></i><a href="messages.html">Messages</a></span>
+                    <span class="icons"><i class="fa fa-list-alt"></i><a href="orders-listing.html">Order Listing</a></span>
+                    <span class="icons"><i class="fa fa-plus-circle"></i><a href="add-product.html">Add Product</a></span>
+                    <span><i class="f"></i><a href="../index.html">Logout</a></span>
+                    <span class="icons"><i class="fa fa-th"></i><a href="products.html">Products</a></span>
+                    <span><i class="fa fa-search"></i><a href="">search</a></span>
+                    <span><img src="img/avatar1.jpg" width="45" height="45" alt=""></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar">
+        <span class="sitename">Around Us</span>
+        <div class="search-profile">
+            <input type="search"><i class="fa fa-search"></i>
+            <img src="img/avatar1.jpg" width="45" height="45" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+
+                    <span class="icons"><a href="index.html"><i class="fa fa-tachometer"></i>Dashboard</a></span>
+                    <span class="icons"><a href="messages.html"><i class="fa fa-envelope"></i>Messages</a></span>
+                    <span class="icons"><a href="orders-listing.html"><i class="fa fa-list-alt"></i>Order Listing</a></span>
+                    <span class="icons"><a href="add-product.html"><i class="fa fa-plus-circle"></i>Add Product</a></span>
+                    <span class="icons"><a href="products.html"><i class="fa fa-th"></i>Products</a></span>
+                    <span><i class="f"></i><a href="../index.html">Logout</a></span>
+                </li>
+            </ul>
+        </div>
+        <div class="container1">
+            <div class="dashboard-heading">
+                <h3>Dashboard / <span>Orders Listing</span></h3>
+
+            </div>
+            <div class="info-cards">
+                <div class="each-card">
+                    <div class="left-text">
+                        <p>Active Orders</p>
+                        <h3>1046</h3>
+                    </div>
+                    <div class="right-image">
+                        <img src="img/statistic1.png" width="100" height="60" alt="">
+                    </div>
+                </div>
+                <div class="each-card">
+                    <div class="left-text">
+                        <p>Pending Orders</p>
+                        <h3>1046</h3>
+                    </div>
+                    <div class="right-image">
+                        <img src="img/statistic2.png" width="100" height="60" alt="">
+                    </div>
+                </div>
+                <div class="each-card">
+                    <div class="left-text">
+                        <p>Finished Orders</p>
+                        <h3>1046</h3>
+                    </div>
+                    <div class="right-image">
+                        <img src="img/statistic3.png" width="100" height="60" alt="">
+                    </div>
+                </div>
+                <div class="each-card">
+                    <div class="left-text">
+                        <p>Payemnt Statistics</p>
+                        <h3>1046</h3>
+                    </div>
+                    <div class="right-image">
+                        <img src="img/statistic4.png" width="100" height="60" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-orders">
+                <div class="heading2">
+                    <div class="heading-items">
+                        <ul>
+                            <li>
+                                <a href="">All orders</a>
+                                <a href=""><span class="active">Active Orders</span></a>
+                                <a href="">Pending</a>
+                                <a href="">Completed</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <div class="all-orders">
+                    <table width="100%">
+                        <tr height="50px;">
+                            <th><input type="checkbox"></th>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>Address</th>
+                            <th>View Items</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Time Slot</th>
+                            <th>Action</th>
+                        </tr>
+
+                        <tr class="tr">
+                            <th><input type="checkbox"></th>
+                            <th>1</th>
+                            <th>Rama Krishna</th>
+                            <th>5-2/tadipatri/ananthapur</th>
+                            <th><a href="" class="green">view Items</a></th>
+                            <th>20</th>
+                            <th>
+                                <p class="pending">Pending</p>
+                            </th>
+                            <th>12.30</th>
+                            <th><a class="action" href="">Accept</a>|<a class="action" href="">Reject</a></th>
+                        </tr>
+                        <tr class="tr">
+                            <th><input type="checkbox"></th>
+                            <th>2</th>
+                            <th>Rama Krishna</th>
+                            <th>5-2/tadipatri/ananthapur</th>
+                            <th><a href="" class="green">view Items</a></th>
+                            <th>20</th>
+                            <th>
+                                <p class="cancelled">Cancelled</p>
+                            </th>
+                            <th>12.30</th>
+                            <th><a class="action" href="">Accept</a>|<a class="action" href="">Reject</a></th>
+                        </tr>
+                        <tr class="tr">
+                            <th><input type="checkbox"></th>
+                            <th>3</th>
+                            <th>Rama Krishna</th>
+                            <th>5-2/tadipatri/ananthapur</th>
+                            <th><a href="" class="green">view Items</a></th>
+                            <th>20</th>
+                            <th>
+                                <p class="pending">Pending</p>
+                            </th>
+                            <th>12.30</th>
+                            <th><a class="action" href="">Accept</a>|<a class="action" href="">Reject</a></th>
+                        </tr>
+                        <tr class="tr">
+                            <th><input type="checkbox"></th>
+                            <th>4</th>
+                            <th>Rama Krishna</th>
+                            <th>5-2/tadipatri/ananthapur</th>
+                            <th><a href="" class="green">view Items</a></th>
+                            <th>20</th>
+                            <th>
+                                <p class="success">Success</p>
+                            </th>
+                            <th>12.30</th>
+                            <th><a class="action" href="">Accept</a>|<a class="action" href="">Reject</a></th>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+
+
+
+        </div>
+</body>
+
+</html>

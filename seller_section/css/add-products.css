@@ -1,0 +1,142 @@
+.add-products{
+    width: 100%;
+}
+.buttons{
+    margin: 3rem 0;
+    text-align: center;
+}
+.buttons button{
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.4);
+    margin: 1rem 2rem;
+    background: #92EE5C;
+    font-size: 17px;
+}
+.form{
+    width: 70%;
+    margin: 0 auto;
+}
+.form form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.left-form label, .right-form{
+    font-size: 15px;
+    font-weight: 600;
+}
+.left-form input, .right-form input{
+    width: 80%;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    margin: 20px 0 20px 10px;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(0,0,0,0.1);
+    border: none;
+}
+.right-form textarea{
+    width: 80%;
+    margin: 20px 0 20px 10px;
+    height: 100px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;   
+    border: none;
+    outline: none;
+    padding: 10px 0 0 10px;
+    letter-spacing: 0.09rem;
+    
+}
+
+.image{
+    width: 80%;
+    margin: 20px 0 20px 10px;    
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.image p{
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+.image i{
+    position: relative;
+    top: -50px;
+    left: 85%;  
+    font-size: 20px
+}
+.bottom-button{
+    text-align: center;
+    
+}
+.bottom-button button{
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 2rem 2rem;
+    background: #92EE5C;
+    font-size: 17px;
+}
+#add_bulk{
+    background: rgba(250,250,250,0.9);
+    color: black;
+}
+
+.form2{
+     width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+#bulk{
+    display: none;
+}
+.form2 p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(120, 107, 196);
+}
+.form2 label{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+.form2 table{
+    width: 70%;
+    margin: 0 auto;
+}
+.form2 table tr{
+    height: 50px;
+}
+.form2 input{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #92EE5C;
+    font-size: 16px;
+}
+
+
+
+@media(max-width:590px){
+    .form, .form2{
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
